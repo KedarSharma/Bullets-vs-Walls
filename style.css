@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  margin:0;
+  padding : 0;
+}
+
+.headings {
+  color: red;
+  width:500px;
+  margin-left: 433px;
+  height: 80px;
+  text-align: center;
+  font-size: 25px;
+  border-width: medium;
+  border-color: red;
+  border-style: solid;
+  background-color: yellow;
+}
+
+.topview {
+  top: 0%;
+  left: 0%;
+}
+
+.note{
+  top: 60%;
+}

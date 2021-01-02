@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="EnterName.js"></script>
+    <script src="typeChange.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <title>
+        Bullets VS Walls
+    </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="headings">
+        <p>
+            <b>WALL SAFETY ORGANISATION TEST</b>
+        </p>
+    </div>
+
+    <h3>
+        <form name="master" method="POST" action="play.html">
+            <label for="carName">SELECT GUN TYPE:</label>
+
+            <select id="gunType" onchange="countryChange(this);">
+                <option value="LMG">LMG</option>
+                <option value="SMG">SMG</option>
+                <option value="Assault Rifle">Assault Rifle</option>
+                <option value="Sniper">Sniper</option>
+                <option value="Pistol">Pistol</option>
+                <option value="Shotgun">Shotgun</option>
+            </select>
+            <br><br>
+
+            SELECT GUN'S NAME:
+
+            <select id="gunName">
+                <option value="M4LMG">M4LMG</option>
+                <option value="RPD">RPD</option>
+            </select>
+            <br><br>
+            <input type="submit" id ="a" formmethod="GET" formaction="play.html" onclick="passval()">
+        </form>
+    </h3>
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>
